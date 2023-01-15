@@ -35,9 +35,6 @@ public class PokemonPurple {
         else {
             System.out.println(p1.getName()+ "won!");
             System.out.println( "Siiiiiiuu!");
-            System.out.println( "    o   ");
-            System.out.println("   / | \  ");
-            System.out.println("     ^   ");
 
         }
     }
