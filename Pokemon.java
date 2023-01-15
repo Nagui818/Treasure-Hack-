@@ -10,8 +10,7 @@ public class Pokemon {
     private int level;
     private int hitPoints;
     private int attack;
-    //1 Constructor with no parameters -> set stuff to some default values of your choice
-    //2 constructor with 5 parameters -> set the values of the vars to the parameters
+    
     public Pokemon()
     {
        setPokemon("No Name",1,"normal",
@@ -57,7 +56,7 @@ public class Pokemon {
     public int getAttack() {
         return attack;
     }
-//Mutator Method / Setter Method
+    //Setter Method
     //should be public
     //Should be void
     //should have a parameter that matches the type of the variable
@@ -65,13 +64,13 @@ public class Pokemon {
     /**
      * This will set the attack for a pokemon as long as it is
      * a positive value. Negative values will end the program.
-     * @param attack - Attack value as an Int
+     *  Attack value as an Int
      */
     public void setAttack(int attack)
     {
         if(attack <= 0)
         {
-            System.out.println("Can't have a negative attack idiot...");
+            System.out.println("Can't have a negative attack");
             System.exit(0);
         }
         else
@@ -80,13 +79,13 @@ public class Pokemon {
     public void setLevel(int newLevel){
         if(newLevel <= 0)
         {
-            System.out.println("Can't have a negative level idiot...");
+            System.out.println("Can't have a negative level");
             System.exit(0);
         }
         else
             level = newLevel;
     }
-    //Accessor Methods - Get Things
+    //Accessor Method
     //public
     //method will have a type that matches the variable
     //return the variable
@@ -121,9 +120,7 @@ public class Pokemon {
     }
 
     /**
-     * Compares 2 pokemon objects to see if they are equal
-     * @param otherPokemon Pokemon we are comparing calling object to
-     * @return truth value of the equality
+     * equals method 
      */
     public boolean equals (Pokemon otherPokemon){
         return this.name.equals(otherPokemon.name)&&
