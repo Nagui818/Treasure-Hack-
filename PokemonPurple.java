@@ -30,7 +30,7 @@ public class PokemonPurple {
         if(p1.getHitPoints()<=0)
         {
             System.out.println(p2.getName()+" won!");
-            System.out.println("Must be sad!");
+            System.out.println("Siiiiiiuu!");
         }
         else {
             System.out.println(p1.getName()+ "won!");
